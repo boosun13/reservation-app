@@ -71,10 +71,6 @@ class FakeDb {
       }
     )
   }
-
-  seeDb() {
-    this.pushProductsToDb()
-  }
 }
 
 module.exports = FakeDb
