@@ -17,8 +17,7 @@ export class ProductListComponent implements OnInit {
 
     const productsObservable = this.productService.getProducts()
     productsObservable.subscribe(
-      (data) => { 
-        this.products = data
+      (data) => { this.products = data 
       },
       (err) => { console.error('次のエラーが発生しました: ' + err) }
     )
